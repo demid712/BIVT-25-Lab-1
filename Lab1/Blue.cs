@@ -7,7 +7,6 @@
             bool answer = false;
 
             // code here
-
             // end
 
             return answer;
