@@ -63,17 +63,17 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            if (x<-1)
+            if (x<=-1)
             {
-                answer = x;
+                answer = 0;
             }
-            else if (x >= -1 && x <= 0)
+            else if (x > -1 && x <= 0)
             {
                 answer = x + 1;
             }
             else if (x > 0)
             {
-                answer = x + 1;
+                answer = 1;
             }
             // end
 
@@ -98,8 +98,20 @@ namespace Lab1
             int answer = 0;
 
             // code here
-            if (Math.Abs(d) < Math.Abs(f)) {if (d > 0) { answer = -1; } else { return answer; } }
-            else {if (d>0) { answer = 1; } else { return answer; } }
+            if (Math.Abs(d) < Math.Abs(f)) 
+            {
+                if (d > 0)
+                {
+                    answer = -1;
+                } 
+            }
+            else 
+            {
+                if (d>0)
+                {
+                    answer = 1; 
+                } 
+            }
             // end
 
                     return answer;
@@ -113,8 +125,18 @@ namespace Lab1
             int b2 = b / 2;
             int c2= c / 2;
             int cnt = a1 + b2 + c2;
-            if (cnt % 3 == 0 && cnt < 3) { answer = true; }
-            else { cnt += 1; if (cnt % 3 == 0 && cnt < 3) { answer = true; } }
+            if (cnt % 3 == 0 && cnt >= 3) 
+            {
+                answer = true;
+            }
+            else
+            {
+                cnt += 1;
+                if (cnt % 3 == 0 && cnt >= 3)
+                {
+                    answer = true; 
+                } 
+            }
             // end
 
                 return answer;
