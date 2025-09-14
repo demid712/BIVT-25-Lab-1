@@ -11,7 +11,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if ((a>0 && b>0) || (b<0 && a<0)) || (a==0 && b==0))
+            if ((a>0 && b>0) || (b<0 && a<0) || (a==0 && b==0))
             {             
                 answer = true;
             }
@@ -128,14 +128,14 @@ namespace Lab1
             int b2 = b / 2;
             int c2= c / 2;
             int cnt = a1 + b2 + c2;
-            if (cnt % 3 == 0 && cnt != 0) 
+            if (cnt % 3 == 0 && cnt > 0) 
             {
                 answer = true;
             }
             else
             {
                 cnt += 1;
-                if (cnt % 3 == 0 && cnt != 0)
+                if (cnt % 3 == 0 && cnt > 0)
                 {
                     answer = true; 
                 } 
