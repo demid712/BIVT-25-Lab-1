@@ -11,7 +11,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if ((a>0 && b>0) || (b<0 && a<0))
+            if ((a>0 && b>0) || (b<0 && a<0)) || (a==0 && b==0))
             {             
                 answer = true;
             }
@@ -24,7 +24,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if ((int) d == d)
+            if ((int) d != d)
             {
                 answer = true;
             }
@@ -37,7 +37,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if (a % b == 0)
+            if (b != 0 && a % b == 0)
             {
                 answer = true;
             }
@@ -50,10 +50,13 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            d=Math.Abs(d);
-            f=Math.Abs(f);
-            g=Math.Abs(g);
-            answer =Math.Max(d,Math.Max(f,g));
+            double d1 = Math.Abs(d);
+            double f1 = Math.Abs(f);
+            double g1 = Math.Abs(g);
+            if (Math.Max(d1, Math.Max(f1, g1)) == d1) { answer = d; }
+            else if (Math.Max(d1, Math.Max(f1, g1)) == f1) { answer = f; }
+            else if (Math.Max(d1, Math.Max(f1, g1)) == g1) { answer = g; }
+                ;
             // end
 
             return answer;
@@ -125,14 +128,14 @@ namespace Lab1
             int b2 = b / 2;
             int c2= c / 2;
             int cnt = a1 + b2 + c2;
-            if (cnt % 3 == 0 && cnt >= 3) 
+            if (cnt % 3 == 0 && cnt != 0) 
             {
                 answer = true;
             }
             else
             {
                 cnt += 1;
-                if (cnt % 3 == 0 && cnt >= 3)
+                if (cnt % 3 == 0 && cnt != 0)
                 {
                     answer = true; 
                 } 
