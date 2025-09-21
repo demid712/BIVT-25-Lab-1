@@ -24,7 +24,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if (Math.Abs(d)%1==0)
+            if (Math.Abs(d)%1!=0)
             {
                 answer = true;
             }
