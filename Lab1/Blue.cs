@@ -11,7 +11,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if ((a>0 && b>0) || (b<0 && a<0)
+            if ((a>0 && b>0) || (b<0 && a<0))
             {             
                 answer = true;
             }
